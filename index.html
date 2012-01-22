@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset=utf-8 />
+<title>Cardinal Direction Compass</title>
+<style>
+  .pointer {
+    height: 0;
+    width: 0;
+    border-left: 3em solid transparent;
+    border-right: 3em solid transparent;
+    border-bottom: 12em solid black;
+    margin: -10px 0 0 -40px;
+    top: 40%;
+    left: 50%;
+    position: absolute;
+  }
+  .n {
+    top: 20%;
+    left:50%;
+    position:absolute;
+    font:8em Helvetica;
+    margin: 0 0 0 -40px;
+  }
+  </style>
+  <script src="http://code.jquery.com/jquery.js"></script>
+</head>
+<body>
+  <div class="n">N<br><br><br><br>S</div>
+  <div class="pointer"></div>
+<script>
+$(document).ready(function() {
+
+  var rotate = function (deg) {  
+      $(".n").css({ "-moz-transform": "rotate(0deg)"});
+      $(".n").css({ "-moz-transform": "rotate(" + deg + "deg)"});
+    
+      $(".n").css({ "-o-transform": "rotate(0deg)"});
+      $(".n").css({ "-o-transform": "rotate(" + deg + "deg)"});
+    
+      $(".n").css({ "-ms-transform": "rotate(0deg)"});
+      $(".n").css({ "-ms-transform": "rotate(" + deg + "deg)"});
+    
+      $(".n").css({ "-webkit-transform": "rotate(0deg)"});
+      $(".n").css({ "-webkit-transform": "rotate(" + deg + "deg)"});
+    
+      $(".n").css({ "transform": "rotate(0deg)"});
+      $(".n").css({ "transform": "rotate(" + deg + "deg)"});
+  };
+  if (window.DeviceOrientationEvent) {
+    window.addEventListener("deviceorientation", function (e) {
+      rotate(e.alpha);
+    }, false);
+  }
+  
+});
+</script>
+  </body>
+
