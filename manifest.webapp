@@ -1,6 +1,9 @@
 {
 "version" : "0.1",
 "name" : "Compass",
+"icons" : {
+	"48": "/img/compass.png"
+},
 "description" : "A Compass",
-"launch_path" : "http://cgack.com/cardinal/index.html"
+"launch_path" : "/index.html"
 }
