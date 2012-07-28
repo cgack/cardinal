@@ -2,7 +2,8 @@
 "version" : "0.1",
 "name" : "Compass",
 "icons" : {
-	"48": "/img/compass.png"
+	"48": "/img/compass.png",
+	"128": "/img/compass_128.png"
 },
 "description" : "A Compass",
 "launch_path" : "/index.html"
