@@ -1,0 +1,11 @@
+{
+"version" : "0.1",
+"name" : "Compass",
+"icons" : {
+	"48": "/img/compass.png",
+	"64": "/img/compass_64.png",
+	"128": "/img/compass_128.png"
+},
+"description" : "A Compass",
+"launch_path" : "/"
+}
