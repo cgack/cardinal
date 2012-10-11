@@ -7,5 +7,5 @@
 	"128": "/img/compass_128.png"
 },
 "description" : "A Compass",
-"launch_path" : "/"
+"launch_path" : "/cardinal/"
 }
