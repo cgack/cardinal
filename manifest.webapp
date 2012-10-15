@@ -2,10 +2,11 @@
 "version" : "0.1",
 "name" : "Compass",
 "icons" : {
-	"48": "/img/compass.png",
-	"64": "/img/compass_64.png",
-	"128": "/img/compass_128.png"
+	"48": "/cardinal/img/compass.png",
+	"64": "/cardinal/img/compass_64.png",
+	"128": "/cardinal/img/compass_128.png"
 },
+"orientation": "portrait",
 "description" : "A Compass",
 "launch_path" : "/cardinal/"
 }
